@@ -1,7 +1,21 @@
 # Budget Tracker
 # A command line tool to track income and expenses
+import json
+import os
 
+SAVE_FILE = "transactions.json"
 transactions = []
+
+def save_transactions():
+    with open(SAVE_FILE, "w") as f:
+        json.dump(transactions, f, indent=2)
+
+def load_transactions():
+    global transactions
+    if os.path.exists(SAVE_FILE):
+        with open(SAVE_FILE, "r") as f:
+            transactions = json.load(f)
+
 
 def add_transaction(type, category, amount, description):
     transaction = {
@@ -12,7 +26,7 @@ def add_transaction(type, category, amount, description):
     }
     transactions.append(transaction)
     print(f"\n✓ {type.capitalize()} of ${amount:.2f} added successfully.")
-
+    save_transactions()
 def get_valid_amount():
     while True:
         try:
@@ -65,12 +79,14 @@ def delete_transaction():
         if 1 <= choice <= len(transactions):
             removed = transactions.pop(choice - 1)
             print(f"\n✓ Transaction deleted: [{removed['type'].upper()}] {removed['category']} - ${removed['amount']:.2f}")
+            save_transactions()
         else:
             print("\nInvalid number. Please try again.")
     except ValueError:
         print("\nPlease enter a valid number.")
 
 def main():
+    load_transactions()  
     print("Welcome to Budget Tracker")
     while True:
         print("\nWhat would you like to do?")
