@@ -28,6 +28,6 @@ The following features are planned for future development:
 
 - **Graphical User Interface (GUI)** — add a desktop UI using Tkinter or PyQt
 - **Export to Excel** — export transactions and summary to a .xlsx file using openpyxl
-- **Data Persistence** — save and load transactions between sessions using JSON or CSV
+- ✅ **Data Persistence** — save and load transactions between sessions using JSON
 - **Monthly Reports** — filter and summarize transactions by month
 - **Category Breakdown** — visual charts showing spending by category using matplotlib
