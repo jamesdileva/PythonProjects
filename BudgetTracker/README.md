@@ -24,5 +24,5 @@ python budget_tracker.py
 6. Exit
 
 ## Future Features
-Add some UI
-Export to Excel
+-Add some UI
+-Export to Excel
