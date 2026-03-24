@@ -22,3 +22,7 @@ python budget_tracker.py
 4. View All Transactions — see a detailed list of every transaction
 5. Delete a Transaction — remove an entry by number
 6. Exit
+
+## Future Features
+Add some UI
+Export to Excel
