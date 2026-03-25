@@ -35,4 +35,3 @@ python csv_analyzer.py
 - **Excel export** — export report to .xlsx using openpyxl
 - **Top 5 transactions** — show the largest expenses
 - **Month over month comparison** — compare two CSV files
-```
