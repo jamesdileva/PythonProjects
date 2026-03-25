@@ -1,0 +1,6 @@
+# Environment variables - never push this to GitHub
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
