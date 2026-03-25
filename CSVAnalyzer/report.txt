@@ -1,0 +1,13 @@
+=== Financial Report ===
+
+Total Income:   $4300.00
+Total Expenses: $2130.50
+Balance:        $2169.50
+
+--- Expenses by Category ---
+Housing         $1500.00
+Transport       $215.00
+Food            $185.50
+Utilities       $155.00
+Health          $40.00
+Entertainment   $35.00

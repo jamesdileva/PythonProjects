@@ -1,0 +1,16 @@
+date,category,description,amount,type
+2024-01-01,Housing,Monthly rent,1500.00,expense
+2024-01-02,Food,Weekly groceries,120.50,expense
+2024-01-03,Transport,Gas,45.00,expense
+2024-01-05,Income,Monthly salary,3500.00,income
+2024-01-07,Food,Restaurant dinner,65.00,expense
+2024-01-10,Utilities,Electric bill,95.00,expense
+2024-01-12,Transport,Car insurance,150.00,expense
+2024-01-14,Food,Groceries,98.75,expense
+2024-01-15,Health,Gym membership,40.00,expense
+2024-01-18,Entertainment,Streaming services,35.00,expense
+2024-01-20,Income,Freelance payment,800.00,income
+2024-01-22,Food,Coffee shop,22.50,expense
+2024-01-25,Utilities,Internet bill,60.00,expense
+2024-01-28,Health,Pharmacy,35.00,expense
+2024-01-30,Transport,Parking,20.00,expense
