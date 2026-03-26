@@ -1,45 +1,99 @@
 # News Tracker
 
-A command line tool that fetches live breaking news using the NewsAPI.
+A desktop news application that fetches live breaking headlines
+using the NewsAPI, with a floating marquee ticker, live feed,
+and keyword search.
 
-## Features
-- Top headlines — fetch the latest US headlines
-- Headlines by category — business, entertainment, health, science, sports, technology
-- Search by keyword — find articles on any topic
-- Save results to file — export articles to a text report
-- Live news ticker — auto-refreshing headlines with countdown timer
+## How to Run
 
-## Setup
-
-### 1. Get a free API key
-Sign up at [newsapi.org](https://newsapi.org) and copy your API key.
-
-### 2. Create your .env file
-Create a file called `.env` in the project folder:
+**GUI version (recommended):**
 ```
-NEWS_API_KEY=your_api_key_here
+python news_tracker_gui.py
 ```
 
-### 3. Install dependencies
-```
-pip install requests python-dotenv
-```
-
-### 4. Run the program
+**Command line version:**
 ```
 python news_tracker.py
 ```
 
+**Or download the executable** from the
+[Releases](https://github.com/YOUR-USERNAME/python-projects/releases/tag/news-tracker-v1.0)
+page — no Python installation required. Windows only.
+
+## Setup
+
+### Get a free API key
+Sign up at [newsapi.org](https://newsapi.org) and copy your API key.
+When you launch the app for the first time a settings popup will
+appear asking for your key. It is saved locally to a .env file
+and never shared or pushed to GitHub.
+
+### Install dependencies
+```
+pip install requests python-dotenv
+```
+
+## Features
+
+### GUI Version
+- **Browse by category** — general, business, entertainment,
+  health, science, sports, technology
+- **Keyword search** — find articles on any topic
+- **Click to open** — double-click any headline to open the
+  full article in your browser
+- **Three tabs:**
+  - Headlines — latest articles from your selected category
+  - Live Feed — auto-refreshing headlines on a configurable timer
+  - Saved Articles — articles you have bookmarked for later
+- **Save articles** — select one or multiple headlines and save
+  them to your collection
+- **Export saved articles** — export your saved collection to
+  a text file
+- **Floating marquee ticker** — a draggable always-on-top window
+  that scrolls headlines continuously, can be moved to any
+  monitor
+- **Status bar** — shows loading, success, and error states
+  in real time
+- **API key settings** — enter and update your key from inside
+  the app, stored securely in a local .env file
+- **Dark mode toggle**
+- **Background threading** — UI stays responsive during all
+  API calls
+
+### Command Line Version
+- Fetch top headlines by category
+- Search by keyword
+- Live auto-refreshing ticker with countdown timer
+- Save articles to text file
+
 ## Security
-This project uses a `.env` file to store the API key locally.
-The `.env` file is excluded from GitHub via `.gitignore` and should
-never be committed or shared.
+This app stores your API key in a local .env file on your machine.
+The key is never hardcoded in the source code and never pushed
+to GitHub. The .env file is excluded via .gitignore.
 
 ## Roadmap
-- **Horizontal scrolling marquee ticker** — terminal ticker tape effect
+
+### Completed
+- ✅ GUI — Tkinter desktop app
+- ✅ Browse headlines by category
+- ✅ Keyword search
+- ✅ Click to open article in browser
+- ✅ Save and export articles
+- ✅ Auto-refresh live feed tab
+- ✅ Floating draggable marquee ticker
+- ✅ Status bar with loading states
+- ✅ API key settings popup
+- ✅ Dark mode
+- ✅ Background threading — UI never freezes
+- ✅ Save multiple articles at once
+
+### Planned
+- **Marquee speed control** — slider in settings to adjust
+  scrolling speed
+- **Sentiment analysis** — rate headlines positive, negative,
+  or neutral
+- **Email digest** — send daily summary to your inbox
+- **Favourite topics** — save preferred searches between sessions
 - **Multiple country support** — fetch headlines from any country
-- **Sentiment analysis** — rate headlines as positive, negative, or neutral
-- **Email digest** — automatically email a daily news summary
-- **GUI interface** — desktop window with live updating headlines using Tkinter
-- **Favorite topics** — save preferred categories and keywords between sessions
-- **Article summarizer** — generate a one line summary of each article
+- **Article summarizer** — one line AI summary per article
+- **Desktop notifications** — alert when breaking news matches
