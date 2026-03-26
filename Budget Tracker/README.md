@@ -48,8 +48,10 @@ python budget_tracker.py
 python budget_tracker_gui.py
 ```
 
-**Or download the executable** from the [Releases](../../releases) page — 
-no Python installation required.
+**Or download the executable** from the 
+[Releases](../../releases) page — no Python 
+installation required. Windows only.
+```
 
 ## Usage
 
