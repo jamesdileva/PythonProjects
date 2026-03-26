@@ -16,7 +16,7 @@ python csv_analyzer.py
 ```
 
 **Or download the executable** from the
-[Releases](https://github.com/YOUR-USERNAME/python-projects/releases/tag/csv-analyzer-v1.0)
+[Releases](hhttps://github.com/jamesdileva/Python-Projects/releases/tag/csv-analyzer-v1.0)
 page — no Python installation required. Windows only.
 
 ## Features
