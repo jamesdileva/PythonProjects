@@ -1,14 +1,38 @@
 [
   {
-    "type": "income",
-    "category": "salary",
-    "amount": 1000.0,
-    "description": "job"
+    "type": "expense",
+    "category": "food",
+    "amount": 1.0,
+    "description": "hotdog"
   },
   {
     "type": "expense",
     "category": "food",
+    "amount": 10.0,
+    "description": "drinks"
+  },
+  {
+    "type": "income",
+    "category": "job",
+    "amount": 1000.0,
+    "description": "work"
+  },
+  {
+    "type": "expense",
+    "category": "games",
+    "amount": 20.0,
+    "description": "sub"
+  },
+  {
+    "type": "expense",
+    "category": "drink",
     "amount": 200.0,
-    "description": "food"
+    "description": "200 drinks"
+  },
+  {
+    "type": "expense",
+    "category": "rent",
+    "amount": 500.0,
+    "description": "roof over head"
   }
 ]

@@ -2,6 +2,18 @@
 
 A command line budget tracking tool built with Python.
 
+## GUI Version (budget_tracker_gui.py)
+- Full desktop interface built with Tkinter
+- Color coded transaction rows — green for income, red for expenses
+- Live summary bar showing income, expenses, and balance
+- Spending by category — bar chart and pie chart
+- Income vs expenses comparison chart
+- Edit existing transactions
+- Export to Excel with formatted headers and summary
+- Export to CSV
+- Dark mode toggle
+- Data persists between sessions via JSON
+
 ## Features
 - Add income and expense transactions
 - View a summary of total income, expenses, and balance
@@ -26,8 +38,14 @@ python budget_tracker.py
 ## Roadmap
 The following features are planned for future development:
 
-- **Graphical User Interface (GUI)** — add a desktop UI using Tkinter or PyQt
-- **Export to Excel** — export transactions and summary to a .xlsx file using openpyxl
-- ✅ **Data Persistence** — save and load transactions between sessions using JSON
-- **Monthly Reports** — filter and summarize transactions by month
-- **Category Breakdown** — visual charts showing spending by category using matplotlib
+## Roadmap
+- ✅ Graphical User Interface (GUI) — Tkinter desktop app
+- ✅ Export to Excel — openpyxl with formatted headers
+- ✅ Export to CSV
+- ✅ Data Persistence — JSON save and load
+- ✅ Category Breakdown — matplotlib bar and pie charts
+- **Dark mode polish** — full dark theme including frames and form areas
+- **Date tracking** — add dates to transactions and filter by month
+- **Budget limits** — set spending limits per category with warnings
+- **Edit transaction** — ✅ completed
+- **Monthly reports** — filter and summarize by month
