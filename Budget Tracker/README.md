@@ -15,11 +15,26 @@ A command line budget tracking tool built with Python.
 - Data persists between sessions via JSON
 
 ## Features
+
+### Command Line Version
 - Add income and expense transactions
-- View a summary of total income, expenses, and balance
+- View summary — total income, expenses, and balance
 - View all transactions with category and description
 - Delete transactions
 - Input validation for all fields
+- Data persistence — saves and loads between sessions via JSON
+
+### GUI Version
+- Full desktop interface built with Tkinter
+- Color coded transaction rows — green for income, red for expenses
+- Live summary bar showing income, expenses, and balance
+- Add, delete, and edit transactions
+- Spending by category — bar chart and pie chart using matplotlib
+- Income vs expenses comparison chart with surplus/deficit indicator
+- Export to Excel with formatted headers and summary totals
+- Export to CSV
+- Dark mode toggle
+- Data persists automatically between sessions via JSON
 
 ## How to Run
 
