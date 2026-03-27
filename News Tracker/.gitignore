@@ -1,6 +1,10 @@
 # Environment variables - never push this to GitHub
 .env
 
-# Python cache files
+# Python cache — never push these
 __pycache__/
 *.pyc
+*.pyo
+dist/
+build/
+*.spec
