@@ -2,6 +2,10 @@
 __pycache__/
 *.pyc
 *.pyo
+dist/
+build/
+*.spec
+
 
 # Log file — generated at runtime
 organizer_log.txt
