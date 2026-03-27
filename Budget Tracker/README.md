@@ -41,7 +41,7 @@ A command line budget tracking tool built with Python.
 **download the executable(recommended)** from the 
 [Releases](https://github.com/jamesdileva/Python-Projects/releases/tag/budget-tracker-v1.1) page — no Python 
 installation required. Windows only.
-```
+
 
 **Command line version:**
 ```
@@ -54,7 +54,6 @@ python budget_tracker_gui.py
 ```
 
 
-```
 ## Usage
 
 ### GUI Version
