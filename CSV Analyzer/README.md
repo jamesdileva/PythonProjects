@@ -3,9 +3,29 @@
 A desktop data analysis tool that loads any CSV file and produces
 financial summaries, category breakdowns, and visual charts.
 
+## Version History
+
+### v1.1 — CustomTkinter Modern UI
+- Complete UI rebuild using CustomTkinter
+- Slate and amber color scheme — analyst tool aesthetic
+- Always-visible right stats panel — no tab switching needed
+- Summary, top categories, and statistics visible simultaneously
+- Inline category filter in the toolbar
+- Themed matplotlib charts — slate dark background
+- Improved dark mode with scrollable stats panel
+
+### v1.0 — Original GUI
+- Tkinter desktop app with tabbed layout
+- Category filter, top 5 expenses tab, statistics tab
+- Charts, dark mode, Excel and report export
+
 ## How to Run
 
-**GUI version (recommended):**
+**download the executable** from the
+[Releases](https://github.com/jamesdileva/Python-Projects/releases/tag/csv-analyzer-v1.1)
+page — no Python installation required. Windows only.
+
+**GUI version:**
 ```
 python csv_analyzer_gui.py
 ```
@@ -19,9 +39,18 @@ python csv_analyzer.py
 [Releases](https://github.com/jamesdileva/Python-Projects/releases/tag/csv-analyzer-v1.0)
 page — no Python installation required. Windows only.
 
+## Dependencies
+```
+pip install pandas matplotlib openpyxl
+```
+
+
 ## Features
 
-### GUI Version
+### v1.0 — Original GUI
+- Tkinter desktop app with tabbed layout
+- Category filter, top 5 expenses tab, statistics tab
+- Charts, dark mode, Excel and report export
 - Browse and load any CSV file from your computer
 - Live summary bar — total income, expenses, and balance
 - Four analysis tabs:
@@ -51,11 +80,6 @@ The analyzer expects a CSV file with these columns:
 date, category, description, amount, type
 ```
 Where type is either `income` or `expense`.
-
-## Dependencies
-```
-pip install pandas matplotlib openpyxl
-```
 
 ## Roadmap
 
