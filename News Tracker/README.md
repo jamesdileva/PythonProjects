@@ -4,13 +4,40 @@ A desktop news application that fetches live breaking headlines
 using the NewsAPI, with a floating marquee ticker, live feed,
 and keyword search.
 
+## Version History
+
+### v1.1 — CustomTkinter Modern UI
+- Complete UI rebuild using CustomTkinter
+- Dark charcoal and electric blue color scheme
+- Editorial card layout — headline, source, date, 
+  save button per article
+- Two column layout — headlines left, saved right,
+  always visible simultaneously
+- Click any headline title to open in browser
+- Hover highlight on article titles
+- Save individual articles or all fetched articles
+  at once
+- Integrated marquee ticker bar at bottom of window
+- Pop-out floating marquee window — draggable,
+  always on top, independent of integrated bar
+- Live feed with last updated timestamp
+- Improved dark mode — explicit widget theming
+- API key settings popup with show/hide toggle
+
+### v1.0 — Original GUI
+- Tkinter desktop app with tabbed layout
+- Headlines, live feed, and saved articles tabs
+- Floating marquee window
+- Background threading for API calls
+- Dark mode, save and export articles
+
 ## How to Run
 
-**download the executable** from the
-[Releases](https://github.com/jamesdileva/Python-Projects/releases/tag/news-tracker-v1.0)
+**download the executable(recommended)** from the
+[Releases](https://github.com/jamesdileva/Python-Projects/releases/tag/news-tracker-v1.1)
 page — no Python installation required. Windows only.
 
-**GUI version (recommended):**
+**GUI version:**
 ```
 python news_tracker_gui.py
 ```
