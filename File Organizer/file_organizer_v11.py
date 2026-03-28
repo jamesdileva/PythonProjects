@@ -351,7 +351,7 @@ class FileOrganizerV11(ctk.CTk):
                                 sticky="w",
                                 padx=16, pady=(0,12))
 
-        # Results table
+        # Results table        
         table_frame = ctk.CTkFrame(panel,
                                     fg_color=self.panel_bg,
                                     corner_radius=12)
@@ -385,7 +385,7 @@ class FileOrganizerV11(ctk.CTk):
                                    anchor="center")
 
         self.tree_organize.tag_configure(
-            "moved",   background="#EAFAF1")
+            "moved",   background="#064e3b", foreground="white")
         self.tree_organize.tag_configure(
             "skipped", background="#FEF9E7")
         self.tree_organize.tag_configure(
